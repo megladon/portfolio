@@ -7,8 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
 
     <title>Starter Template for Bootstrap</title>
 
@@ -18,20 +16,36 @@
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
-        .fd-fade1 {
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /*
+the prefix fd-
+is used as an abbreviation for
+fade,
+and to clearly indicate it is not a Bootstrap class
+
+B&W images are in background-image
+*/
+
+body{
+color: white;
+background-color:#111;
+}
+
+.fd-fade1 {
   width: 240px;
   height: 180px;
-  background-image: url(https://farm5.staticflickr.com/4002/4508800171_03d5ee3d7f_z.jpg)
+  background-image: url(http://i.imgur.com/yxAxCaK.jpg)
 }
 .fd-fade2 {
   width: 240px;
   height: 160px;
-  background-image: url(https://farm5.staticflickr.com/4002/4508800171_03d5ee3d7f_z.jpg)
+  background-image: url(http://i.imgur.com/jlattvQ.jpg)
 }
 .fd-fade3 {
   width: 240px;
   height: 152px;
-  background-image: url(https://farm4.staticflickr.com/3336/3449303230_65c9afc88c_z.jpg)
+  background-image: url(http://i.imgur.com/XqtS5WA.jpg)
 }
 
 /*hide all the images, so background image shows*/
@@ -47,13 +61,8 @@ img.fd-img3 {
     </style>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  </head>
+</head>
 
-    
-    
-    
-    
-    
   <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -78,16 +87,16 @@ img.fd-img3 {
     </div>
 
     <div class="container">
-    
-    <div class="row">
+
+      <div class="row">
         <div class="col-md-4">
             <h3>Example 1</h3>
 
             <div class="fd-fade1 fd-effect">
-                <img src="https://farm5.staticflickr.com/4002/4508800171_03d5ee3d7f_z.jpg" class="fd-img1" alt="">
+                <img src="http://i.imgur.com/yxAxCaK.jpg" class="fd-img1" alt="">
             </div>
             <!-- /.fd-fade -->
-            <br> <a href="#" target="_blank">Flickr CC: view from villa gimbrone</a>
+            <br> <a href="https://flic.kr/p/2fLGw" target="_blank">Flickr CC: view from villa gimbrone</a>
 
         </div> <!-- /.col-md-4 -->
         
@@ -95,10 +104,10 @@ img.fd-img3 {
             <h3>Example 2</h3>
 
             <div class="fd-fade2 fd-effect">
-                <img src="https://farm5.staticflickr.com/4002/4508800171_03d5ee3d7f_z.jpg" class="fd-img2" alt="">
+                <img src="http://i.imgur.com/jlattvQ.jpg" class="fd-img2" alt="">
             </div>
             <!-- /. fd-fade -->
-            <br> <a href="#" target="_blank">Flickr CC: Leigh-on-Sea</a>
+            <br> <a href="https://flic.kr/p/8j6EeB" target="_blank">Flickr CC: Leigh-on-Sea</a>
 
         </div> <!-- /.col-md-4 -->
         
@@ -106,19 +115,21 @@ img.fd-img3 {
             <h3>Example 3</h3>
 
             <div class="fd-fade3 fd-effect">
-                <img src="https://farm4.staticflickr.com/3336/3449303230_65c9afc88c_z.jpg" class="fd-img3" alt="">
+                <img src="http://i.imgur.com/XqtS5WA.jpg" class="fd-img3" alt="">
             </div> <!-- /. fd-fade -->
             
-            <br> <a href="#" target="_blank">Flickr CC: seaside</a>
+            <br> <a href="https://www.flickr.com/photos/18213948@N00/11835207236/in/photolist-j2QwMb-69zusC-5mkvTw-6QLANd-FbY8M-GCFnr-GCFja-GCCKq-8j6EeB-e34J9w-cK3dqs-9fdiBA-GCFkP-4aPVes-GCFeK-98sKbD-61gbaT-gD4XyF-agvUjC-ecTvk6-6YNLLG-6YNGAQ-PPDKx-fGXPm-fGXPn-fGYyd-fGYyh-aggmh3-FxnHY-fGYyf-fGYy7-fGYyb-fGYy9-fGXPk-fGXPo-4DV13v-GCCXd-GCFpK-GCCVf-4GHjK-4GHjL-4GHjM-fcPdM-GCFyn-8un928-GCCZo-4Tsma2-85esrE-9yvwQS-6p76XM-4NdW3y#" target="_blank">Flickr CC: seaside</a>
 
         </div><!-- /.col-md-4 -->
-    </div><!-- /.container -->
+    </div> <!-- /.row -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
 /*
 Ref: http://api.jquery.com/hover/
 Calling $( selector ).hover( handlerIn, handlerOut ) is shorthand for:
@@ -143,7 +154,5 @@ $(document).ready(function () {
     });  // end .fd-effect
 
 }); // end document.ready function</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
